@@ -3,6 +3,6 @@ class Solution:
         myProduct=1
         mySum=0
         for i in str(n):
-            myProduct=myProduct*int(i)
+            myProduct*=int(i)
             mySum+=int(i)
         return myProduct-mySum

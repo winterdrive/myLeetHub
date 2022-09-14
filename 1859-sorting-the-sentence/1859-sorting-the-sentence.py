@@ -5,7 +5,6 @@ class Solution:
         myDict=dict()
         for i in myList:
             myDict[i[-1]+i[:-1]]=''
-        myDict=sorted(myDict)
-        for value in myDict:
+        for value in sorted(myDict):
             result=result+value[1:]+" "
         return result[:-1]

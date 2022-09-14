@@ -3,7 +3,7 @@ class Solution:
         result=''
         myDict=dict()
         for i in s.split(' '):
-            myDict[i[-1]+i[:-1]]=''
-        for value in sorted(myDict):
-            result=result+value[1:]+" "
+            myDict[int(i[-1])]=i[:-1]
+        for i in range(1,len(s.split(' '))+1):
+            result=result+myDict[i]+" "
         return result[:-1]

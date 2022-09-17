@@ -1,0 +1,15 @@
+class Solution:
+    def wateringPlants(self, plants: List[int], capacity: int) -> int:
+        result=0
+        currentCap=capacity
+        for i in range(0,len(plants)):
+            if currentCap-plants[i]>=0:
+                result+=1
+                currentCap-=plants[i]
+                continue
+            else:
+                result+=((i))
+                currentCap=capacity                
+                result+=(i+1)
+                currentCap-=plants[i]
+        return result

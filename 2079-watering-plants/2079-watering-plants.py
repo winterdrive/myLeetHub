@@ -8,6 +8,6 @@ class Solution:
                 currentCap-=plants[i]
                 continue
             else:
-                result+=((i)+(i+1))
+                result+=((i*2)+1)
                 currentCap=capacity-plants[i]              
         return result

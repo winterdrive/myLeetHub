@@ -1,7 +1,5 @@
 class Solution:
     def reverseStr(self, s: str, k: int) -> str:
-        result=""
-        temp=""
         count=0
         for i in range(0,len(s),k):
             if(count%2==0):
@@ -9,5 +7,4 @@ class Solution:
                 count+=1
             else:
                 count+=1
-        result=s
-        return result
+        return s

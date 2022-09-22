@@ -7,4 +7,5 @@ class Solution:
                 myList[i]=myList[i].capitalize()
             else:
                 myList[i]=myList[i]
+                
         return " ".join(myList)

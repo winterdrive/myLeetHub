@@ -3,30 +3,7 @@ class Solution:
         if len(s)<=26:
             s=s.lower()
         else:
-            s=s.replace('A','a')
-            s=s.replace('B','b')
-            s=s.replace('C','c')
-            s=s.replace('D','d')
-            s=s.replace('E','e')
-            s=s.replace('F','f')
-            s=s.replace('G','g')
-            s=s.replace('H','h')
-            s=s.replace('I','i')
-            s=s.replace('J','j')
-            s=s.replace('K','k')
-            s=s.replace('L','l')
-            s=s.replace('M','m')
-            s=s.replace('N','n')
-            s=s.replace('O','o')
-            s=s.replace('P','p')
-            s=s.replace('Q','q')
-            s=s.replace('R','r')
-            s=s.replace('S','s')
-            s=s.replace('T','t')
-            s=s.replace('U','u')
-            s=s.replace('V','v')
-            s=s.replace('W','w')
-            s=s.replace('X','x')
-            s=s.replace('Y','y')
-            s=s.replace('Z','z')
+            s=s.replace('A','a').replace('B','b').replace('C','c').replace('D','d').replace('E','e').replace('F','f').replace('G','g').replace('H','h').replace('I','i').replace('J','j').replace('K','k').replace('L','l').replace('M','m').replace('N','n').replace('O','o').replace('P','p').replace('Q','q').replace('R','r').replace('S','s').replace('T','t').replace('U','u').replace('V','v').replace('W','w').replace('X','x').replace('Y','y').replace('Z','z')
+        return s
+
         return s

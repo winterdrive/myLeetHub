@@ -1,12 +1,13 @@
 class Solution:
     def numberOfBeams(self, bank: List[str]) -> int:
         result=0
-        newList=[]
-        for i in bank:
-            if i.count("1")!=0:
-                newList.append(i.count("1")) 
-        for i in range(0,len(newList)):
-            if (i+1)==len(newList):
+        currentLaserNum=0
+        formerLaserNum=0
+        for i in range(0,len(bank)):
+            if (i+1)>len(bank):
                 break
-            result+=newList[i]*newList[i+1]
+            if bank[i].count("1")!=0:
+                currentLaserNum=bank[i].count("1")
+                result+=formerLaserNum*currentLaserNum
+                formerLaserNum=currentLaserNum
         return result

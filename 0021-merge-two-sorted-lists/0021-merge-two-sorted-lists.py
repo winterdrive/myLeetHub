@@ -25,6 +25,8 @@ class Solution:
         # return init_node.next
 
         # 方法二
+        # 空間複雜度降到了 O(1)
+        # 時間複雜度降到了 O(N+M)
         init_node = ListNode(0)
         curr = init_node
 
